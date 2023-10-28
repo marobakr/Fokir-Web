@@ -194,8 +194,18 @@
 }
 
 /* testmonials */
-
-@media screen and (max-width: 768px) {
+@media screen and (max-width:500px) {
+  .testmonials .testimonial::before {
+    left: -100px;
+    top: -100px;
+    background-color: transparent;
+    border-top: 100px solid transparent;
+    border-bottom: 100px solid transparent;
+    border-left: 100px solid #ff305b;
+    border-right: 100px solid transparent;
+  }
+}
+@media screen and (min-width:600px) and ( max-width: 768px) {
   .testmonials .testimonial {
     width: 100%;
     text-align: center;

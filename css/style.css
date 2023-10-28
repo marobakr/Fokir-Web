@@ -730,6 +730,9 @@ button[type='submit'] {
 .footer .title * {
   display: inline-block;
 }
+.footer .title #year {
+  margin-bottom: 20px;
+}
 .footer .title span {
   color: #ff305b;
 }
