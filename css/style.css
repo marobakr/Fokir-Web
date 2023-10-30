@@ -86,15 +86,15 @@ nav.hidden {
 nav .logo {
   float: left;
 }
-nav .bars ,
+nav .bars,
 nav .menu {
   float: right;
   padding: 20px 5px;
   text-align: center;
 }
-nav .bars  {
+nav .bars {
   display: none;
-  color:#fff;
+  color: #fff;
   font-size: 25px;
   line-height: 25px;
 }
@@ -191,7 +191,6 @@ nav .container .logo a {
 
 .about .img {
   position: relative;
-  overflow: hidden;
   margin-left: 7%;
   float: left;
   width: 33%;
@@ -199,11 +198,11 @@ nav .container .logo a {
   border-radius: 5px;
 }
 .about .overlay {
-  transform: translateY(445px);
+  transform: translateY(100%);
   content: '';
   position: absolute;
-  left: 15px;
-  top: 15px;
+  left: 0;
+  top: 0;
   width: 100%;
   height: 100%;
   background-color: #00000091;
@@ -215,6 +214,20 @@ nav .container .logo a {
 .about .img:hover .overlay {
   transform: translateY(0px);
   visibility: visible;
+}
+.about .icnos {
+  width: 100%;
+  height: 100%;
+}
+.about .inner {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
 }
 .about .overlay i {
   margin: 50% auto;
@@ -367,11 +380,25 @@ nav .container .logo a {
   color: #ff305b;
   transition: all 0.3s ease;
 }
+.portfolio .container .row .img {
+  position: relative;
+  margin: 20px auto;
+  overflow: hidden;
+}
+.portfolio .row .img:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  transition: all 0.2s ease-in;
+}
+.portfolio .row .img:hover:after {
+  background-color: #00000051;
+}
 .portfolio .row .img img {
   width: 100%;
-}
-.portfolio .container .row .img {
-  margin: 20px auto;
 }
 /* End Portfolio */
 /* Start DashBords */
@@ -410,6 +437,7 @@ nav .container .logo a {
 /* Start testmonials */
 .testmonials {
   text-align: center;
+  overflow: hidden;
 }
 .testmonials .testimonial {
   width: 75%;
@@ -594,6 +622,7 @@ nav .container .logo a {
   background-color: #fff;
   padding: 0 0 20px;
   margin-bottom: 20px;
+  overflow: hidden;
 }
 .blog .col:not(:last-child) {
   margin-right: 2%;
@@ -604,13 +633,17 @@ nav .container .logo a {
 }
 .blog .col .img img {
   width: 100%;
+  aspect-ratio: 16/9;
+}
+iframe {
+  aspect-ratio: 16/9;
 }
 .blog .col .vedio {
-  padding-bottom:20px ;
+  padding-bottom: 20px;
 }
 .blog .col iframe {
   width: 100%;
-  height: 220px;
+  height: 100%;
 }
 .blog .text {
   padding: 15px 25px;

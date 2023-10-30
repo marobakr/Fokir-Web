@@ -37,13 +37,12 @@
     <!-- Media Query -->
     <link rel="stylesheet" href="./css/media.css" />
     <link rel="stylesheet" href="./css/mediate.css" />
-
   </head>
   <body>
     <!-- Start Nav -->
     <nav>
       <div class="container">
-        <div  class="logo">
+        <div class="logo">
           <a href="#nav">fokir</a>
         </div>
         <div class="bars">
@@ -87,6 +86,7 @@
       <div class="container">
         <div class="img">
           <img src="./images/about.jpg" alt="myImage" />
+          <div class="inner">
           <div class="overlay">
             <div class="icnos">
               <i class="fa-brands fa-facebook"></i>
@@ -95,6 +95,8 @@
               <i class="fa-brands fa-github"></i>
             </div>
           </div>
+          </div>
+          
         </div>
         <div class="info">
           <h2>hello,</h2>
@@ -333,7 +335,7 @@
           </div>
         </div>
         <div class="controls">
-          <div onclick="showPreviousTestimonial()" class="arrow "></div>
+          <div onclick="showPreviousTestimonial()" class="arrow"></div>
           <div onclick="showNextTestimonial()" class="arrow prev"></div>
         </div>
       </div>
@@ -345,13 +347,37 @@
         <div class="main-title">
           <h2>our blog</h2>
         </div>
-          <div class="col">
+        <div class="col">
           <div class="img">
             <img src="./images/blog/32.jpg" alt="blog" />
           </div>
           <div class="text">
             <p>17 May, 2017</p>
             <h3>Full Width Blog Post</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Consequuntur ea, quis magnam deserunt eius incidunt repellat
+              molestiae.
+            </p>
+            <div class="link">
+              <a href="#">Read More</a>
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="img">
+            <iframe
+              width="560"
+              height="315"
+              allowfullscreen="false"
+              allow="autoplay; encrypted-media"
+              src="https://www.youtube.com/embed/uVju5--RqtY?feature=oembed"
+            ></iframe>
+          </div>
+          <div class="text">
+            <p>20 April, 2018</p>
+            <h3>Development Blog Post</h3>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
               Consequuntur ea, quis magnam deserunt eius incidunt repellat
@@ -381,43 +407,6 @@
             </div>
           </div>
         </div>
-        <!-- <div class="col">
-          <div class="vedio">
-          <iframe width="1778" allowfullscreen="false" allow="autoplay; encrypted-media" src="https://www.youtube.com/embed/uVju5--RqtY?feature=oembed"></iframe>
-          </div>
-          <div class="text">
-            <p>20 April, 2018</p>
-            <h3>Development Blog Post</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Consequuntur ea, quis magnam deserunt eius incidunt repellat
-              molestiae.
-            </p>
-            <div class="link">
-              <a href="#">Read More</a>
-              <i class="fa-solid fa-arrow-right"></i>
-            </div>
-          </div>
-        </div> -->
-      
-        <div class="col">
-          <div class="img">
-            <img src="./images/blog/32.jpg" alt="blog" />
-          </div>
-          <div class="text">
-            <p>17 May, 2017</p>
-            <h3>Full Width Blog Post</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Consequuntur ea, quis magnam deserunt eius incidunt repellat
-              molestiae.
-            </p>
-            <div class="link">
-              <a href="#">Read More</a>
-              <i class="fa-solid fa-arrow-right"></i>
-            </div>
-          </div>
-        </div> 
       </div>
     </div>
     <!-- End Blog -->

@@ -20,13 +20,12 @@ document.addEventListener('DOMContentLoaded', function () {
 const currentDate = new Date().getFullYear()
 const yearElement = (document.getElementById('year').innerHTML += currentDate)
 
-
 // Fillter oF Button Portfolio
 document.querySelectorAll('button').forEach((button) => {
   button.addEventListener('click', function () {
     // Get Attribute from button
-    const filter = this.getAttribute('data-filter')
     const items = document.querySelectorAll('.portfolio .row .img')
+    const filter = this.getAttribute('data-filter')
 
     items.forEach((item) => {
       item.style.display = 'none'
@@ -44,7 +43,6 @@ document.querySelectorAll('button').forEach((button) => {
       })
     }
 
-    
     // Remove "active" class from all buttons
     document.querySelectorAll('button').forEach((button) => {
       button.classList.remove('active')
@@ -66,6 +64,7 @@ function showTestimonial(index) {
   testimonials[index].classList.add('active-testimonial')
 }
 
+
 function showPreviousTestimonial() {
   currentTestimonialIndex =
     (currentTestimonialIndex - 1 + testimonials.length) % testimonials.length
@@ -80,16 +79,12 @@ function showNextTestimonial() {
 // Show the first testimonial initially
 showTestimonial(currentTestimonialIndex)
 
-
-
 //handle clicked to open munu bars
 document.querySelector('.bars').addEventListener('click', function () {
   document.querySelector('.menu').classList.toggle('show')
 })
 
-
-
-// 
+//
 const txtFull = 'Professional Web Designer Designer Developer ' //the text goes here
 const txtArr = txtFull.split('')
 
